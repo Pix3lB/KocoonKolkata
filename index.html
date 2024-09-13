@@ -3,11 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kocoon Kolkata</title>
+    <title>KocoonKolkata - Empowering Women</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kt.png" type="image/png">
 </head>
 <body>
-    <h1>Kocoon Kolkata</h1>
-    <p>Coming Soon. by Rumana Azmi</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="k.png" alt="KocoonKolkata Logo" style="height:100px;">
+            </div>
+            <ul>
+                <!-- <img src="k.png" alt="KocoonKolkata Logo" style="height:100px;"> -->
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Empowering Women through Education</h1>
+        <p>Creating opportunities for middle-aged women to learn and thrive in the real world.</p>
+    </section>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>We focus on educating middle-aged women, enhancing their skills to face real-world challenges confidently.</p>
+    </section>
+
+    <section id="goals">
+        <h2>Our Goals</h2>
+        <ul>
+            <li>Provide financial literacy to manage personal finances.</li>
+            <li>Promote digital literacy to help navigate the modern world.</li>
+            <li>Raise awareness about legal rights and health issues.</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Workshops on financial management.</li>
+            <li>Classes for basic and advanced computer skills.</li>
+            <li>Legal rights and self-defense awareness programs.</li>
+        </ul>
+    </section>
+
+    <footer>&copy; 2024 KocoonKolkata</footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
